@@ -1,0 +1,83 @@
+body {
+    background-color: #e5e5e5;
+}
+
+h1,
+h2,
+h3,
+legend {
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+}
+
+
+#pizzaSize {
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* reveal message */
+.show {
+    display: block;
+}
+
+.person {
+    padding: 3rem 2rem;
+}
+
+.pizzaInfo {
+    padding: 3rem 2rem;
+}
+
+fieldset {
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(130, 129, 129);
+    border: #14213d solid 2px;
+}
+
+/* Form labels */
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    margin: 10px;
+}
+
+.error {
+    display: none;
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+table tr:hover {
+    background-color: #f7f7f7;
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project 3 Registration Form</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="project-3.css">
+</head>
+
+<body>
+  <div class="container my-5">
+    <form name="pizza">
+      <div class="form-group person">
+        <fieldset>
+          <legend> Personal Info</legend>
+          <!-- NAME -->
+          <label for="name">Name</label>
+          <input required id="name" type="text" name="name" class="form-control" aria-describedby="nameHelp"
+            placeholder="Full name" minlength="2" maxlength="50">
+
+          <div id="nameAlert" class="alert alert-danger d-none" role="alert">Please enter your name</div>
+          <small id="nameSmall" class="form-text text-muted">Enter your full name</small> <br>
+
+          <!-- EMAIL -->
+          <br>
+          <hr>
+          <label for="email">Email address</label>
+          <input required id="email" minlength="2" maxlength="80" type="email" name="email" class="form-control"
+            aria-describedby="emailHelp" placeholder="Enter email">
+
+          <div id="emailAlert" class="alert alert-dange d-none" role="alert">Please enter your email</div>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> <br>
+      </div>
+      </fieldset>
+
+      <fieldset class="pizzaInfo">
+        <!-- TOPPINGS -->
+        <div class="row top">
+          <div class="col-md-6">
+            <legend>Toppings</legend>
+            <small>Every pizza comes with tomato sauce and cheese.</small>
+            <br><br>
+
+            <div class="form-check toppings">
+              <input class="form-check-input" type="checkbox" name="toppings" value="pepperoni" id="pepperoni">
+              <label class="form-check-label" for="pepperoni">Pepperoni</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="toppings" value="sausage" id="sausage">
+              <label class="form-check-label" for="sausage">Sausage</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="toppings" value="onions" id="onions">
+              <label class="form-check-label" for="onions">Onions</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="toppings" value="chicken" id="chicken">
+              <label class="form-check-label" for="chicken">Chicken</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="toppings" value="peppers" id="peppers">
+              <label class="form-check-label" for="peppers">Peppers</label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+
+            <!-- SPICE LEVEL -->
+            <legend>Spice Level</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="spice" id="noSpice" value="0 - No Spice">
+              <label class="form-check-label" for="noSpice">
+                0 - No Spice
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="spice" id="mildSpice" value="1 - Mild Spice">
+              <label class="form-check-label" for="mildSpice">
+                1 - Mild Spice
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="spice" id="mediumSpice" value="2 - Medium Spice">
+              <label class="form-check-label" for="mediumSpice">
+                2 - Medium Spice
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="spice" id="hotSpice" value="3 - Hot Spice">
+              <label class="form-check-label" for="hotSpice">
+                3 - Hot Spice
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <!-- PIZZA SIZE  -->
+        <div class="row">
+          <div class="col-md-12 mt-5">
+            <div class="dropdown">
+              <label for="pizzaSize" style="font-size: 18px;">Choose a Size:</label>
+              <select name="pizzaSize" id="pizzaSize">
+                <option value="">--Please choose a size--</option>
+                <option value="small 10"">Small 10" </option>
+                <option value="medium 12"">Medium 12" </option>
+                <option value="large 14"">Large 14" </option>
+              </select>
+              <div id="sizeAlert" class="alert alert-danger d-none" role="alert">Please select a pizza size</div>
+            </div>
+            <!-- submit button -->
+            <div class="buttons mt-4 mb-4">
+              <input type="submit" id="register" value="Register" class="btn btn-primary">
+              <input type="reset" id="formReset" value="Reset" class="btn btn-primary">
+            </div>
+          </div>
+    </form>
+    </fieldset>
+
+
+
+
+    <!-- table -->
+    <div class="reg mt-5">
+      <h2>Registration</h2>
+      <table class="table table-striped results">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Pizza Size</th>
+            <th>Toppings</th>
+            <th>Spice Level</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="project-3.js"></script>
+</body>
+
+</html>

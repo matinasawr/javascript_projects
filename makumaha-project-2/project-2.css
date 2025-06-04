@@ -1,0 +1,134 @@
+/* Add your own custom styling here */
+/* You also have access to Bootstrap */
+
+body {
+    background-color: #fefae0;
+}
+
+h1 {
+    color: #606c38;
+    font-family: "DM Sans", serif;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-style: italic;
+    color: #bc6c25;
+    font-size: 20px;
+}
+
+p {
+    font-family: "DM Sans", serif;
+    font-style: italic;
+    color: #283618;
+}
+
+
+.header {
+    width: 680px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    border: black thin solid;
+    background-color: #606c3855;
+    padding-top: 2rem;
+    border-radius: 20px;
+}
+
+
+.info {
+    font-family: "DM Sans", serif;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+}
+
+.results {
+    padding-top: 1rem;
+    background: rgba(255, 255, 255, 0.517);
+    padding-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.mes-cou {
+    padding-top: 2rem;
+}
+
+.numbers {
+    margin-top: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    background-color: #606c38;
+    border-radius: 15px;
+    border: #283618 5px solid;
+
+}
+
+/* buttons */
+.num {
+    margin: 10px;
+    display: flex;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    background-color: #fefae0;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans", serif;
+
+}
+
+.try-again {
+    padding-top: 2rem;
+}
+
+#tryButton {
+    background-color: #606c38 !important;
+    cursor: pointer;
+}
+
+.num:hover {
+    background-color: #a3b18a;
+    cursor: pointer;
+}
+
+.num:active {
+    background-color: white;
+}
+
+
+/* for changing the background of the buttons */
+.higher {
+    background-color: #8ecae6;
+    pointer-events: none;
+    cursor: not-allowed;
+
+}
+
+.lower {
+    background-color: #ae2012;
+    pointer-events: none;
+    cursor: not-allowed;
+
+}
+
+.winner {
+    background-color: #ee9b00;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* for the curser: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor - I wasn't abled to add a disabled class (which i think is because im adding in my numbers as the div Erika gave, not as buttons, but this cursor method does the same thing */
+.disabled {
+    pointer-events: none;
+    background-color: rgb(166, 165, 165);
+}

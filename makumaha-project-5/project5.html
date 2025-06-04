@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing on a Canvas</title>
+    <link rel="stylesheet" href="project5.css">
+</head>
+
+<body>
+    <main>
+        <canvas width="2500" height="1500" id="sketch"></canvas>
+        <div class="controls">
+            <div class="buttons">
+                <button id="black" class="active">BLACK</button>
+                <button id="white">WHITE</button>
+                <button id="erase">ERASE</button>
+                <button id="rainbow">RAINBOW</button>
+                <button id="wild">WILD</button>
+                <button id="clear">CLEAR</button>
+            </div>
+        </div>
+        <form id="widthColor">
+            <label for="width">Line Width: </label>
+            <input type="range" id="width" min="1" max="100" value="50">
+            <br>
+            <label for="custom">Custom Color: </label>
+            <input type="color" id="custom" value="#000000">
+        </form>
+    </main>
+
+    <script src="project5.js"></script>
+</body>
+
+</html>
